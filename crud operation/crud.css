@@ -1,0 +1,34 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+.card-text{
+    font-size: 14px;
+}
+.foot{
+    font-size: 16px;
+    text-align: center;
+ }
+ .foot ul li{
+     padding:5px;
+ }
+ .foot ul li:hover{
+     color: orange;
+     cursor: pointer;
+ }
+ .foot ul li{
+     list-style-type: none;
+ }
+ hr{
+    font-size: 18px;
+     margin-left: 200px;
+     margin-right: 200px;
+ }
+ .copyright{
+    background-color: black;
+    text-align: center;
+    color: orange;
+ }
+ 
+ 
+ 
