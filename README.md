@@ -1,1 +1,77 @@
-# grid
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
+  <script type="text/javascript" src="http://cdn3.devexpress.com/jslib/15.1.7/js/dx.webappjs.js"></script>
+  <script type="text/javascript" src="crud.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdn3.devexpress.com/jslib/15.1.7/css/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="http://cdn3.devexpress.com/jslib/15.1.7/css/dx.light.css" />
+  <link href="crud.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="card text-white bg-secondary my-5  text-center">STUDENT RECORDS</div>
+
+    <div id="gridContainer" style="width: 100%;"></div>
+
+    <footer class="py-5 bg-light">
+      <div class="foot col-sm-12">
+          <h2>About Records</h2>
+          <ul>
+              <li>Info</li>
+              <li>Terms and Condition</li>
+          </ul>
+          <hr>
+          <ul>
+          <h2>Customer Care</h2>
+              <li>1800-572-4700 (24*7)</li>
+              <li>Email Us</li>
+          </ul>
+          </div>
+        </footer>
+        <footer class="py-5 bg-dark">
+            <p class="copyright">Copyright © 2021 StudentRecord Pvt Ltd. All rights reserved.</p>
+        </footer>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function (){
+
+        $("#gridContainer").dxDataGrid({
+            dataSource:Students,
+            columns: [
+              'Title Of Courtesy',
+              'StudentName',
+              'BirthDate',
+              'JoiningDate'
+            ],
+            paging:{
+              pageSize:6
+            },
+            editing:{
+              editMode: "batch",
+              editEnabled:true,
+              removeEnabled:true,
+              insertEnabled:true,
+            }
+          })
+        })
+</script>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
